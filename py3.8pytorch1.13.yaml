@@ -1,0 +1,23 @@
+name: tempo  # Choose a descriptive name for your environment
+
+channels:
+  - defaults
+  - pytorch
+
+dependencies:
+  - python=3.8  
+  - pip
+  - pip:
+      - reformer_pytorch
+      - patool
+      - transformers
+      - pandas
+      - scikit-learn
+      - matplotlib
+      - statsmodels
+      - numpy
+      - torch==1.13.1+cu118  # CUDA 11.8 compatible version
+      - torchvision==0.14.1+cu118 
+      - torchaudio==0.13.1+cu118  
+      - peft
+      - omegaconf
